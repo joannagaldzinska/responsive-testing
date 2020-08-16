@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebStudio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+
+<body>
+    <!-- неизменная шапка сайта -->
+    <header>
+    
+        <div class="container header">
+    
+            <a href="" class="logo"><span class="part-first">Web</span><span class="part-second"> Studio</span></a>
+    
+            <nav>
+                <ul class="nav list">
+                    <li class="nav-item"><a class="" href="./index.html">Студия</a></li>
+                    <li class="nav-item"><a class="" href="./portfolio.html">Портфолио</a></li>
+                    <li class="nav-item"><a class="active-page" href="./contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+    
+            <ul class="contacts list contacts-container">
+                <li class="contact-item"><a href="mailto:info@devstudio.com">
+                        <svg class="contact-icon">
+                            <use href="./images/sprite.svg#icon-envelope"></use>
+                        </svg>info@devstudio.com</a></li>
+                <li class="contact-item"><a href="tel:00380961111111">
+                        <svg class="contact-icon">
+                            <use href="./images/sprite.svg#icon-smartphone"></use>
+                        </svg>+38 096 111 11 11</a></li>
+            </ul>
+    
+        </div>
+    
+    </header>
+
+                <!-- <form class="js-order-form">
+
+                    <p>Оставьте свои данные, мы вам перезвоним</p>
+        
+                    <div class="form-field">
+                        <input class="form-input" type="text" name="name" id="name">
+                        <label class="form-label"for="name"><svg class="form-icon">
+                                <use href="./images/modal-sprite.svg#icon-person"></use></svg>Имя</label>
+                    </div>
+
+                    <div class="form-field">
+                        <input class="form-input" type="tel" name="tel" id="tel">
+                        <label class="form-label" for="tel"><svg class="form-icon">
+                            <use href="./images/modal-sprite.svg#icon-phone"></use>
+                        </svg>Телефон</label>
+                    </div>
+
+
+                    <div class="form-field">
+                        <input class="form-input" type="email" name="email" id="email">
+                        <label class="form-label" for="email"><svg class="form-icon">
+                            <use href="./images/modal-sprite.svg#icon-email"></use>
+                        </svg>Почта</label>
+                    </div>
+
+                    <div class="form-field last">
+                        <label for="comment"></label>
+                        <textarea class="form-input" class="comment" name="comment" id="comment" placeholder="Комментарий"></textarea>
+                    </div>
+
+                    <div class="policy">
+                        <input type="checkbox" name="policy" id="policy">
+                        <label for="policy">Соглашаюсь с рассылкой и принимаю <span><a href="">Условия договора</a></span></label>
+                    </div>
+                        
+                    <button class="submit-button btn" type="submit">Отправить</button>
+                </form>
+
+                
+ 
+    <script>
+        (() => {
+            document
+                .querySelector('.js-order-form')
+                .addEventListener('submit', e => {
+                    e.preventDefault();
+
+                    new FormData(e.currentTarget).forEach((value, name) =>
+                        console.log(`${name}: ${value}`),
+                    );
+
+                    e.currentTarget.reset();
+                });
+        })();
+    </script> -->
+
+</body>
+</html>
