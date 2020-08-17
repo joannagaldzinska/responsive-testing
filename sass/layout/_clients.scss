@@ -1,0 +1,45 @@
+
+.clients{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+
+.clients-list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.client{
+    display: flex;
+    width: 170px;
+    height: 90px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    cursor: pointer;
+
+    transition-property: border;
+    transition-duration: 250ms;
+    
+    &:hover, &:focus{
+    border: 1px solid #2196F3;
+    }
+}
+
+.company-logo{
+    fill: #AFB1B8;
+
+    transition-property: fill;
+    transition: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.client:hover .company-logo,
+.client:focus .company-logo{
+    fill: #2196F3;
+    transition: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

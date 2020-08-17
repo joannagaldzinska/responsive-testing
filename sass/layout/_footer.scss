@@ -1,0 +1,130 @@
+footer {
+  background-color: $footer-bgc;
+}
+
+.footer-logo {
+  margin-right: 0px;
+  margin-bottom: 20px;
+  padding: 0;
+
+  .part-second {
+    color: #ffffff;
+  }
+}
+
+.location {
+  display: flex;
+  flex-direction: column;
+
+  .map {
+  color: $white-title-color;
+  font-size: 14px;
+  line-height: 1.7;
+  font-style: normal;
+  text-decoration: none;
+  margin-bottom: 9px;
+  }
+}
+
+
+.footer-contacts {
+  display: flex;
+  flex-direction: column;
+
+  .footer-contacts-details { 
+  color: rgba(255, 255, 255, 0.6);
+  font-size: inherit;
+  line-height: 1.7;
+  font-style: normal;
+  text-decoration: none;
+  }
+
+  li {
+  margin-bottom: 9px;
+  }
+}
+
+
+.attention {
+  display: block;
+  color: $white-title-color;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.footer-container {
+  display: flex;
+  padding-bottom: 60px;
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+  margin-right: auto;
+}
+
+.join {
+  display: flex;
+  flex-direction: column;
+  margin-right: 94px;
+}
+
+.footer-attention {
+  display: flex;
+  justify-content: end;
+  padding-top: 72px;
+
+  .item-icon {
+  fill: #fff;
+  }
+
+  .sm-list-item-icon {
+  background-color: rgba(255, 255, 255, 0.1);
+
+    &:hover, &:focus{
+    background-color: $additional-color;
+    }
+  }
+}
+
+.subscribe {
+  display: flex;
+  flex-direction: column;
+}
+
+.subscribe-form {
+  display: flex;
+  align-items: center;
+}
+
+.subscribe-input {
+  display: block;
+  margin: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+  width: 358px;
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: $footer-bgc;
+}
+
+.subscribe-button {
+  margin-left: 12px;
+
+  &::after{
+  content: "";
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(../images/icon-send.svg);
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  }
+}

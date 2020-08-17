@@ -2,15 +2,15 @@
 @import "./utils/vars";
 @import "./utils/placeholder";
 
-// @import "./base/base";
+@import "./base/base";
 
 @import "./components/container";
-// @import "./components/section";
+@import "./components/section";
 @import "./components/btn";
 @import "./components/logo";
-// @import "./components/social-media-icon";
+@import "./components/social-media-icon";
 
-// @import "./layout/header";
+@import "./layout/header";
 @import "./layout/team";
 @import "./layout/footer";
 @import "./layout/portfolioButtons";
