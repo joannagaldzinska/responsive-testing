@@ -611,10 +611,6 @@ b {
   border-radius: 0px 0px 4px 4px;
 }
 
-footer {
-  background-color: #2f303a;
-}
-
 .footer-logo {
   margin-right: 0px;
   margin-bottom: 20px;
@@ -666,6 +662,7 @@ footer {
 .footer-container {
   display: flex;
   padding-bottom: 60px;
+  background-color: #2f303a;
 }
 
 .footer-info {
