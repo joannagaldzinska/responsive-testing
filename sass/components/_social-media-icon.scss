@@ -1,0 +1,39 @@
+.sm-list {
+  display: flex;
+  justify-content: space-between;
+  width: 206px;
+}
+
+.sm-list-item-icon {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+
+  transition-property: background-color;
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sm-list-item-icon:hover,
+.sm-list-item-icon:focus {
+  background-color: $additional-color;
+}
+
+.item-icon {
+  display: block;
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+
+  transition-property: fill;
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sm-list-item-icon:hover .item-icon,
+.sm-list-item-icon:focus .item-icon {
+  fill: white;
+}

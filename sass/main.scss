@@ -1,3 +1,20 @@
-@import "./utils.scss/normalize";
-@import "./utils.scss/vars";
-@import "./base.scss/base";
+@import "./utils/normalize";
+@import "./utils/vars";
+@import "./utils/placeholder";
+
+@import "./base/base";
+
+@import "./components/container";
+@import "./components/section";
+@import "./components/btn";
+@import "./components/modal";
+@import "./components/logo";
+@import "./components/social-media-icon";
+
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/adventages";
+@import "./layout/activities";
+@import "./layout/team";
+@import "./layout/clients";
+@import "./layout/footer";

@@ -15,7 +15,11 @@
         <div class="container header">
     
             <a href="" class="logo"><span class="part-first">Web</span><span class="part-second"> Studio</span></a>
-    
+            <div class="burger-menu">
+                <svg class="burger">
+                <use href="./images/modal-sprite.svg#icon-burger"></use>
+                </svg>
+            </div>
             <nav>
                 <ul class="nav list">
                     <li class="nav-item"><a class="active-page" href="./index.html">Студия</a></li>
@@ -41,7 +45,7 @@
 
     <main>
         <!-- герой -->
-        <section class="section">
+        <section>
             <div class="hero">
                 <h1>Эффективные решения<br> для вашего бизнеса</h1>
                 <button class="btn" type="button" data-modal-open> Заказать услугу</button>
@@ -49,7 +53,7 @@
         </section>
         
         <!-- наши преимущества -->
-        <section class="advantages section">
+        <section>
            <div class="container">
                 <h2 hidden>Наши преимущества</h2> <!-- заголовок будет невидимым, но должен существовать -->
                 <ul class="advantages-list list">
@@ -94,8 +98,8 @@
         </section>
 
         <!-- Чем мы занимаемся -->
-        <section class="activities section">
-            <div class="container">
+        <section>
+            <div class="container activities">
                 <h2 class="section-title">Чем мы занимаемся</h2>
                 <ul class="activities-list list">
                     <li class="activities-list-item">
@@ -116,7 +120,7 @@
         </section>
 
         <!-- Наша команда -->
-        <section class="team section">
+        <section class="team">
             <div class="container">
                 <h2 class="section-title">Наша команда</h2>
                 <ul class="our-team-list list">
@@ -249,7 +253,7 @@
         </section>
 
         <!-- Постоянные клиенты -->
-        <section class="clients section">
+        <section>
             <div class="container">
                 <h2 class="section-title">Постоянные клиенты</h2>
                 
@@ -306,7 +310,7 @@
 <!-- футер -->
 
     <footer>
-        <div class="footer-container container">
+        <div class="container">
             <div class="footer-info">
                     <a class="logo footer-logo" href=""><span class="part-first">Web</span><span class="part-second"> Studio</span></a>
     
@@ -349,8 +353,7 @@
                                     </svg></a></li>
                     </ul>
                 </div>
-    
-    
+        
                 <div class="subscibe">
                     <b class="attention">Подпишитесь на рассылку</b>
                     <form class="subscribe-form">
