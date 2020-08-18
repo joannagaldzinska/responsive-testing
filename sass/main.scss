@@ -4,15 +4,17 @@
 
 @import "./base/base";
 
-@import "./components/container";
 @import "./components/section";
+
+@import "./components/container";
+
 @import "./components/btn";
 @import "./components/modal";
 @import "./components/logo";
 @import "./components/social-media-icon";
 
-@import "./layout/header";
-@import "./layout/hero";
+// @import "./layout/header";
+// @import "./layout/hero";
 @import "./layout/adventages";
 @import "./layout/activities";
 @import "./layout/team";

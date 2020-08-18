@@ -1,5 +1,4 @@
 .activities {
-  margin: 0px;
   padding-top: 47px;
   padding-bottom: 94px;
 }
@@ -29,3 +28,9 @@
 .activities-list-item img {
   display: block;
 }
+
+@media (max-width:1199px){
+  .activities{
+    display: none;
+  }
+} 
