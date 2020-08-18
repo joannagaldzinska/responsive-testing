@@ -1,9 +1,7 @@
 .hero {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding-bottom: 200px;
   padding-top: 200px;
+  max-width: 1600px;
 
   background-color: rgba(47, 48, 58, 0.8);
   background-image: linear-gradient(
@@ -13,6 +11,7 @@
     url(../images/header-img.jpg);
   background-size: cover;
   background-position: center;
+}
 
     h1{
       color: $white-title-color;
@@ -24,4 +23,3 @@
       margin-bottom: 30px;
       text-align: center; 
     }
-}
