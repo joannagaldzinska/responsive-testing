@@ -37,7 +37,7 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media (max-width:768px){
+@media (max-width:767px){
 
   .clients-list-item:not(:nth-child(2n)){
     margin-right: 30px;

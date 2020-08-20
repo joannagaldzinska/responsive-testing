@@ -816,7 +816,7 @@ textarea {
     top: 100%;
     right: 0;
     width: 100%;
-    background-color: teal;
+    background-color: #fff;
     z-index: 50;
     padding-top: 60px;
     padding-bottom: 60px;
@@ -1120,7 +1120,7 @@ p {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .clients-list-item:not(:nth-child(2n)) {
     margin-right: 30px;
   }
