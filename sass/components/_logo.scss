@@ -11,4 +11,9 @@
     .part-second {
         color: $black-title-color;
     }
+
+    @media (min-width:1200px){
+        font-size: 26px;
+        
+}
 }

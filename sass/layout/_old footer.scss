@@ -1,0 +1,210 @@
+.footer-container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $footer-bgc;
+}
+
+
+.footer-logo {
+  margin-right: 0px;
+  margin-bottom: 20px;
+  padding: 0;
+
+  .part-second {
+    color: #ffffff;
+  }
+}
+
+.footer-info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 60px;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+
+    .map {
+    color: $white-title-color;
+    font-size: 14px;
+    line-height: 1.7;
+    font-style: normal;
+    text-decoration: none;
+    margin-bottom: 8px;
+    }
+
+    .footer-contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+     li:first-child{
+      margin-bottom: 8px;
+      }
+    
+    .footer-contacts-details { 
+    color: rgba(255, 255, 255, 0.6);
+    font-size: inherit;
+    line-height: 1.7;
+    font-style: normal;
+    text-decoration: none;  
+    }
+  }
+}
+
+.join{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-bottom: 60px;
+  margin: 0 auto;
+
+  .item-icon {
+  fill: #fff;
+  }
+
+  .sm-list-item-icon {
+  background-color: rgba(255, 255, 255, 0.1);
+
+    &:hover, &:focus{
+    background-color: $additional-color;
+    }
+  }
+}
+
+
+.attention {
+  display: block;
+  
+}
+
+.subscribe-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subscribe-input {
+  display: block;
+  margin-bottom: 20px;;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+  max-width: 450px;
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: $footer-bgc;
+}
+
+.subscribe-button {
+  margin-left: 12px;
+
+  &::after{
+  content: "";
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(../images/icon-send.svg);
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  }
+}
+
+// @media (max-width:787px){
+
+// }
+
+@media (min-width:768) and (max-width:1199){
+  .tablet-footer{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .footer-info{
+    width: 50%;
+  }
+}
+
+
+    // <footer class="section footer-container">
+    //   <div class="container">
+    //       <div class="tablet-footer">
+    //                 <div class="footer-info">
+    //                     <a class="logo footer-logo" href=""><span class="part-first">Web</span><span class="part-second"> Studio</span></a>
+                    
+    //                     <address class="address">
+    //                         <a class="map" href="https://goo.gl/maps/HwrvqcL7cg5Yp1Jj8">г. Киев, пр-т Леси Украинки, 26</a>
+                    
+    //                         <ul class="footer-contacts list">
+    //                             <li>
+    //                                 <a class="footer-contacts-details" href="mailto:info@devstudio.com">info@devstudio.com</a>
+    //                             </li>
+                    
+    //                             <li>
+    //                                 <a class="footer-contacts-details" href="tel:00380961111111">+38 096 111 11 11</a>
+    //                             </li>
+    //                         </ul>
+    //                     </address>
+    //                 </div>
+                    
+                    <div class="join">
+                        <b class="attention">Присоединяйтесь</b>
+                        <ul class="sm-list list link">
+                            <li class="sm-list-item">
+                                <a class="sm-list-item-icon" href="" aria-label="insta icon">
+                                    <svg class="item-icon">
+                                        <use href="./images/sprite.svg#icon-instagram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="sm-list-item">
+                                <a class="sm-list-item-icon" href="" aria-label="twitter icon">
+                                    <svg class="item-icon">
+                                        <use href="./images/sprite.svg#icon-twitter"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="sm-list-item">
+                                <a class="sm-list-item-icon" href="" aria-label="facebook icon">
+                                    <svg class="item-icon">
+                                        <use href="./images/sprite.svg#icon-facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="sm-list-item">
+                                <a class="sm-list-item-icon" href="" aria-label="linkedin icon">
+                                    <svg class="item-icon">
+                                        <use href="./images/sprite.svg#icon-linkedin"></use>
+                                    </svg></a>
+                            </li>
+                        </ul>
+                    </div>
+          </div>
+
+
+    //       <div class="join">
+    //         <b class="attention">Подпишитесь на рассылку</b>
+            <form class="subscribe-form">
+              <input
+                class="subscribe-input"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+                autocomplete="email "
+              />
+              <button class="subscribe-button btn" type="submit">
+                Подписаться
+              </button>
+            </form>
+    //       </div>
+    //     </div>
+
+    // </footer>

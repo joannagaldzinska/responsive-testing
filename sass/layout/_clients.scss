@@ -1,8 +1,3 @@
-.clients{
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
-
 .clients-list{
     display: flex;
     flex-wrap: wrap;
@@ -11,6 +6,7 @@
 
 .client{
     display: flex;
+    width: 210px;
     height: 90px;
     justify-content: center;
     align-items: center;

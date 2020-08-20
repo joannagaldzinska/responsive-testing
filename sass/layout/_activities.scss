@@ -1,5 +1,5 @@
 .activities {
-  padding-top: 47px;
+  padding-top: 0;
   padding-bottom: 94px;
 }
 
@@ -23,10 +23,6 @@
 
 .activities-list-item {
   position: relative;
-}
-
-.activities-list-item img {
-  display: block;
 }
 
 @media (max-width:1199px){
