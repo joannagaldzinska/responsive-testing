@@ -337,7 +337,7 @@ template {
   display: none;
 }
 
-h3, .activities-list h3 {
+.advantages-list-item h3, .activities-list h3 {
   font-size: 14px;
   line-height: 1.14;
   color: #212121;
@@ -706,6 +706,196 @@ textarea {
   fill: white;
 }
 
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav a {
+  color: #212121;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-align: center;
+  transition-property: color;
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav a:hover, .nav a:focus {
+  color: #2196f3;
+}
+
+.active-page {
+  position: relative;
+  color: #2196f3;
+}
+
+.active-page::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: #2196f3;
+  border-radius: 2px;
+}
+
+.header-contacts-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-contacts-list a {
+  color: #757575;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: inherit;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  transition-property: color;
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-contacts-list a:hover, .header-contacts-list a:focus {
+  color: #2196f3;
+}
+
+.header-contacts-list .header-contacts-item {
+  display: flex;
+}
+
+.header-contacts-item a:hover .contact-icon,
+.header-contacts-item a:focus .contact-icon {
+  fill: #2196f3;
+}
+
+.contact-icon {
+  fill: #757575;
+  margin-right: 10px;
+  height: 16px;
+  width: 16px;
+  transition-property: fill;
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (max-width: 767px) {
+  .header {
+    position: relative;
+    align-items: center;
+  }
+  .header.container {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  .menu-button {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+  }
+  .menu-button.is-open .icon-burger {
+    display: none;
+  }
+  .menu-button.is-open .icon-close {
+    display: block;
+  }
+  .icon-close {
+    display: none;
+  }
+  .menu-wrapper {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 50;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .menu-wrapper.is-open {
+    display: block;
+  }
+  .nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+  .nav a {
+    font-size: 18px;
+    line-height: 1.7;
+  }
+  .nav .nav-item:not(:last-child) {
+    margin-bottom: 40px;
+  }
+  .header-contacts-item:first-child {
+    margin-bottom: 16px;
+  }
+}
+
+@media (min-width: 768px) {
+  .header {
+    align-items: center;
+  }
+  .header.container {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+  .menu-button {
+    display: none;
+  }
+  .menu-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-item:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .nav {
+    margin-right: 84px;
+  }
+  .header-contacts-item:first-child {
+    margin-bottom: 10px;
+  }
+  .active-page::after {
+    bottom: -41px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .nav {
+    margin-right: 305px;
+  }
+  .header-contacts-list {
+    flex-direction: row;
+  }
+  .header-contacts-item:first-child {
+    margin-right: 30px;
+  }
+  .header-contacts-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .active-page::after {
+    bottom: -33px;
+  }
+}
+
 .hero {
   padding-bottom: 200px;
   padding-top: 200px;
@@ -737,7 +927,7 @@ h1 {
   background-color: #f5f4fa;
 }
 
-h3 {
+.advantages-list-item h3 {
   margin-bottom: 10px;
 }
 
@@ -976,6 +1166,9 @@ p {
 
 footer {
   background-color: #2f303a;
+}
+
+footer .container {
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -1027,11 +1220,14 @@ footer .footer-contacts .footer-contacts-list .footer-contacts-list-item:first-c
   margin-bottom: 8px;
 }
 
+footer .join {
+  margin-bottom: 60px;
+}
+
 footer .join, footer .join-form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 60px;
 }
 
 footer .join b, footer .join-form b {
@@ -1056,6 +1252,7 @@ footer .subscribe-form {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 
 footer .subscribe-input {
@@ -1063,6 +1260,7 @@ footer .subscribe-input {
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
+  width: 100%;
   font-size: 16px;
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
@@ -1095,6 +1293,7 @@ footer .subscribe-button::after {
     padding-left: 61px;
   }
   footer .join {
+    margin: 0;
     padding-right: 89px;
   }
   footer .join-form {
@@ -1125,11 +1324,13 @@ footer .subscribe-button::after {
     padding: 0;
     margin: 0;
     margin-right: 94px;
+    margin-top: 12px;
   }
   footer .join-form {
     align-items: flex-start;
     padding: 0;
     margin: 0;
+    margin-top: 12px;
   }
   footer .subscribe-form {
     display: flex;

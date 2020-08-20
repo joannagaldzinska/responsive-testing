@@ -1,8 +1,10 @@
 
 footer{
   background-color: $footer-bgc;
+  .container{
   padding-top: 60px;
   padding-bottom: 60px;
+  }
 
 
 .footer-contacts{
@@ -52,11 +54,14 @@ footer{
   }
 }
 
+.join{
+  margin-bottom: 60px;
+}
+
 .join, .join-form{
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 60px;
 
   b{
     color: $white-title-color;
@@ -81,6 +86,7 @@ footer{
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 
 .subscribe-input {
@@ -88,7 +94,7 @@ footer{
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
-  // width: 450px;
+  width: 100%;
   font-size: 16px;
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
@@ -126,6 +132,7 @@ footer{
   }
 
   .join{
+    margin: 0;
     padding-right: 89px;
   }
 
@@ -163,12 +170,14 @@ footer{
     padding: 0;
     margin: 0;
     margin-right: 94px;
+    margin-top: 12px;
   }
 
   .join-form{
     align-items: flex-start;
     padding: 0;
     margin: 0;
+    margin-top: 12px;
   }
 
   .subscribe-form{
