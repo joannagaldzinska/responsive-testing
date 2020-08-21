@@ -50,11 +50,18 @@ p {
   }
 }
 
+@media (max-width:1199px){
+  .advantages {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
 @media (min-width:1200px){
 
   .advantages {
     padding-top: 94px;
-    padding-bottom: 90px;
+    padding-bottom: 94px;
   }
 
   .advantages-list{

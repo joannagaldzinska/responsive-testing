@@ -1,6 +1,5 @@
 .hero {
-  padding-bottom: 200px;
-  padding-top: 200px;
+  display: block;
   max-width: 1600px;
 
   background-color: rgba(47, 48, 58, 0.8);
@@ -13,13 +12,41 @@
   background-position: center;
 }
 
-    h1{
+.hero-text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1{
       color: $white-title-color;
       text-transform: uppercase;
       font-weight: 900;
-      font-size: 44px;
-      line-height: 1.36;
       letter-spacing: 0.06em;
       margin-bottom: 30px;
       text-align: center; 
     }
+
+}
+
+@media (max-width:1199px){
+  .hero{
+    height: 400px;
+  }
+  .hero h1{
+    font-size: 26px;
+    line-height: 1.62;
+    margin-top: 118px;
+  }
+}
+
+@media (min-width:1200px){
+
+  .hero{
+    height: 600px;
+  }
+  .hero h1{
+    font-size: 44px;
+    line-height: 1.36;
+    margin-top: 200px;
+  }
+}
