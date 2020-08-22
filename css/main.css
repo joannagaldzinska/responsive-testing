@@ -391,6 +391,10 @@ b {
   margin: 0px;
 }
 
+button {
+  padding: 0;
+}
+
 .section-title {
   color: #212121;
   font-weight: 700;
@@ -464,6 +468,7 @@ b {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
+  padding: 93px 15px 94px 15px;
   opacity: 1;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   overflow-y: scroll;
@@ -474,22 +479,43 @@ b {
   pointer-events: none;
 }
 
-.modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.backdrop .container {
+  width: 100%;
 }
 
 .js-order-form {
-  display: flex;
-  flex-direction: column;
-  height: 581px;
-  width: 528px;
   padding: 40px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  background: #ffffff;
+  background-color: #ffffff;
+}
+
+@media (max-width: 479px) {
+  .js-order-form {
+    position: relative;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 480px) {
+  .js-order-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media (max-width: 1199px) {
+  .js-order-form {
+    width: 450px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .js-order-form {
+    width: 528px;
+  }
 }
 
 .js-order-form p {
@@ -550,6 +576,14 @@ textarea {
   justify-content: center;
   line-height: 1.7;
   margin-bottom: 30px;
+  margin-left: 24px;
+}
+
+@media (max-width: 1199px) {
+  .policy {
+    font-size: 12px;
+    line-height: 1.17;
+  }
 }
 
 .policy a {
@@ -567,7 +601,7 @@ textarea {
 .policy-required::after {
   content: "";
   position: absolute;
-  left: 0;
+  left: -24px;
   top: 50%;
   transform: translateY(-50%);
   display: inline-block;
@@ -801,23 +835,38 @@ textarea {
     align-items: center;
   }
   .header.container {
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
   .menu-button {
     width: 40px;
     height: 40px;
     background-color: transparent;
     border: none;
+    cursor: pointer;
   }
   .menu-button.is-open .icon-burger {
     display: none;
   }
   .menu-button.is-open .icon-close {
     display: block;
+    transition-property: color;
+    transition: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .menu-button.is-open .icon-close:hover, .menu-button.is-open .icon-close:focus {
+    fill: #2196f3;
   }
   .icon-close {
     display: none;
+  }
+  .icon-burger {
+    transition-property: color;
+    transition: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .icon-burger:hover, .icon-burger:focus {
+    fill: #2196f3;
   }
   .menu-wrapper {
     display: none;
@@ -829,6 +878,7 @@ textarea {
     z-index: 50;
     padding-top: 60px;
     padding-bottom: 60px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
   }
   .menu-wrapper.is-open {
     display: block;
@@ -841,7 +891,7 @@ textarea {
   }
   .nav a {
     font-size: 18px;
-    line-height: 1.7;
+    line-height: 1.17;
   }
   .nav .nav-item:not(:last-child) {
     margin-bottom: 40px;

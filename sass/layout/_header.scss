@@ -85,28 +85,36 @@
 @media (max-width:767px){
 
   .header{
-  position: relative;
-  align-items: center;
-}
+    position: relative;
+    align-items: center;
+  }
   
   .header.container{
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
   .menu-button{
-  width: 40px;
-  height: 40px;
-  background-color: transparent;
-  border: none;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;  
+    cursor: pointer;
 
   &.is-open{
     .icon-burger{
       display: none;
     }
 
-    .icon-close{
-      display: block;
+  .icon-close{
+    display: block;
+    transition-property: color;
+    transition: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover, &:focus{
+      fill: $additional-color
+      }
     }
   }
 }
@@ -114,6 +122,16 @@
 .icon-close{
   display: none;
   }
+
+.icon-burger{
+  transition-property: color;
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover, &:focus{
+    fill: $additional-color
+  }
+}
 
 .menu-wrapper{
   display: none;
@@ -126,6 +144,8 @@
 
   padding-top: 60px;
   padding-bottom: 60px;
+
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
 
   &.is-open{
   display: block;
@@ -140,7 +160,7 @@
 
     a{
       font-size: 18px;
-      line-height: 1.7;
+      line-height: 1.17;
     }
 
     .nav-item:not(:last-child){
