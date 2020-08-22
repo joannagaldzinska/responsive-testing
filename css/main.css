@@ -400,6 +400,20 @@ b {
   margin-bottom: 50px;
 }
 
+@media (max-width: 1199px) {
+  .portfolio {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .portfolio {
+    padding-top: 93px;
+    padding-bottom: 94px;
+  }
+}
+
 .container {
   padding-right: 15px;
   padding-left: 15px;
@@ -952,7 +966,6 @@ textarea {
 }
 
 p {
-  font-size: 14px;
   line-height: 1.7;
 }
 
@@ -971,8 +984,6 @@ p {
     flex-wrap: wrap;
   }
   .advantages-list-item {
-    display: flex;
-    flex-direction: column;
     width: 354px;
   }
   .advantages-list-item:not(:nth-child(2n)) {
@@ -1134,7 +1145,6 @@ p {
 
 .client {
   display: flex;
-  width: 100%;
   height: 90px;
   justify-content: center;
   align-items: center;
@@ -1161,12 +1171,6 @@ p {
   fill: #2196F3;
   transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-@media (max-width: 480px) {
-  .clients-list-item {
-    width: calc(50%-30/2);
-  }
 }
 
 @media (max-width: 767px) {
@@ -1321,6 +1325,7 @@ footer {
   background-image: url(../images/icon-send.svg);
   width: 24px;
   height: 24px;
+  margin-left: 10px;
 }
 
 @media (max-width: 768px) {

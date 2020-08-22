@@ -8,3 +8,15 @@
   margin-bottom: 50px;
 }
 
+.portfolio {
+  @media (max-width:1199px){
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media (min-width:1200px){
+    padding-top: 93px;
+    padding-bottom: 94px;
+  }
+}
+
