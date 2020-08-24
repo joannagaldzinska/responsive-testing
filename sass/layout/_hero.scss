@@ -4,47 +4,96 @@
 
   background-color: rgba(47, 48, 58, 0.8);
   background-image: linear-gradient(
-      rgba(47, 48, 58, 0.8),
-      rgba(47, 48, 58, 0.8)
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
     ),
-    url(../images/header-img.jpg);
+    url(../images/hero/hero-mobile@1x.jpg);
   background-size: cover;
   background-position: center;
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero/hero-mobile@2x.jpg);
+  }
+
+  @media screen and (min-width:480px){
+    background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero/hero-tablet@1x.jpg);
+  }
+  
+  @media screen and (min-width:480px),
+    screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero/hero-tablet@2x.jpg);
+  }
+
+  @media screen and (min-width:768px){
+    background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero/hero-pc@1x.jpg);
+  }
+
+   @media screen and (min-width:768px),
+    screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero/hero-pc@2x.jpg);
+  }
+
+
+
 }
 
-.hero-text{
+.hero-text {
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  h1{
-      color: $white-title-color;
-      text-transform: uppercase;
-      font-weight: 900;
-      letter-spacing: 0.06em;
-      margin-bottom: 30px;
-      text-align: center; 
-    }
-
+  h1 {
+    color: $white-title-color;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 0.06em;
+    margin-bottom: 30px;
+    text-align: center;
+  }
 }
 
-@media (max-width:1199px){
-  .hero{
+@media screen and (max-width: 1199px) {
+  .hero {
     height: 400px;
   }
-  .hero h1{
+  .hero h1 {
     font-size: 26px;
     line-height: 1.62;
     margin-top: 118px;
   }
 }
 
-@media (min-width:1200px){
-
-  .hero{
+@media screen and (min-width: 1200px) {
+  .hero {
     height: 600px;
   }
-  .hero h1{
+  .hero h1 {
     font-size: 44px;
     line-height: 1.36;
     margin-top: 200px;

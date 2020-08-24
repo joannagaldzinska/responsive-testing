@@ -1,25 +1,23 @@
-
-footer{
+footer {
   background-color: $footer-bgc;
   padding-top: 60px;
   padding-bottom: 60px;
-  }
+}
 
-
-.footer-contacts{
+.footer-contacts {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
-  .logo{
+
+  .logo {
     margin-bottom: 20px;
 
-    .part-second{
+    .part-second {
       color: #fff;
     }
   }
 
-  .map{
+  .map {
     display: block;
     color: $white-title-color;
     font-size: 14px;
@@ -29,53 +27,54 @@ footer{
     margin-bottom: 8px;
   }
 
-  .footer-contacts-list{
+  .footer-contacts-list {
     display: block;
-   
-     .footer-contacts-item {  
-    color: rgba(255, 255, 255, 0.6);
-    font-size: inherit;
-    line-height: 1.7;
-    font-style: normal;
-    text-decoration: none;
+
+    .footer-contacts-item {
+      color: rgba(255, 255, 255, 0.6);
+      font-size: inherit;
+      line-height: 1.7;
+      font-style: normal;
+      text-decoration: none;
     }
 
-    .footer-contacts-list-item{
+    .footer-contacts-list-item {
       display: flex;
       flex-direction: column;
-      &:first-child{
+      &:first-child {
         margin-bottom: 8px;
       }
     }
-
   }
 }
 
-.join, .join-form{
+.join,
+.join-form {
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  b{
+  b {
     color: $white-title-color;
-    text-transform: uppercase; 
+    text-transform: uppercase;
     margin-bottom: 20px;
-    }
+  }
 
-  .sm-list-item-icon{
+  .sm-list-item-icon {
     background-color: rgba(255, 255, 255, 0.1);
-    
-    &:hover, &:focus{
-    background-color: $additional-color;
+
+    &:hover,
+    &:focus {
+      background-color: $additional-color;
     }
 
-    .item-icon{
+    .item-icon {
       fill: #fff;
     }
   }
 }
 
-.subscribe-form{
+.subscribe-form {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -83,7 +82,7 @@ footer{
 }
 
 .subscribe-input {
-  margin-bottom: 20px;;
+  margin-bottom: 20px;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
@@ -98,80 +97,77 @@ footer{
 }
 
 .subscribe-button {
-  &::after{
-  content: "";
-  display: inline-block;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-image: url(../images/icon-send.svg);
-  width: 24px;
-  height: 24px;
-  margin-left: 10px;
+  &::after {
+    content: "";
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../images/icon-send.svg);
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
   }
 }
 
-@media (max-width:768px){
-
-  .footer-contacts{
+@media screen and (max-width: 768px) {
+  .footer-contacts {
     margin-bottom: 60px;
   }
 
-  .join{
+  .join {
     margin-bottom: 60px;
   }
-  
 }
 
-@media (min-width:768px){
-
-  .footer-tablet-top{
+@media screen and (min-width: 768px) {
+  .footer-tablet-top {
     display: flex;
     justify-content: space-between;
   }
 }
 
-@media (min-width:768px) and (max-width:1199px){
-  .footer-tablet-top{
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-tablet-top {
     margin-bottom: 45px;
   }
 
-  .footer-contacts{
+  .footer-contacts {
     margin-left: 51px;
   }
 
-    .join{
+  .join {
     margin-right: 74px;
   }
 }
 
-@media (max-width:1199px){
-  .footer-contacts-list-item{
-  align-items: center;
-}
-}
-
-@media (min-width:1200px){
-footer .container{
-  display: flex;
+@media screen and (max-width: 1199px) {
+  .footer-contacts-list-item {
+    align-items: center;
+  }
 }
 
-.footer-tablet-top{
-  align-items: flex-start;
-}
-
-.footer-contacts{
-  width: 231px;
-  margin-right: 69px;
-  align-items: flex-start;
+@media screen and (min-width: 1200px) {
+  footer .container {
+    display: flex;
   }
 
-  .footer-contacts-list-item{      
-      &:first-child{
-        margin-bottom: 9px;
-      }
-    }
+  .footer-tablet-top {
+    align-items: flex-start;
+  }
 
-  .join{
+  .footer-contacts {
+    width: 231px;
+    margin-right: 69px;
+    align-items: flex-start;
+  }
+
+  .footer-contacts-list-item {
+    &:first-child {
+      margin-bottom: 9px;
+    }
+  }
+
+  .join {
     align-items: flex-start;
     padding: 0;
     margin: 0;
@@ -179,20 +175,20 @@ footer .container{
     margin-top: 12px;
   }
 
-  .join-form{
+  .join-form {
     align-items: flex-start;
     padding: 0;
     margin: 0;
     margin-top: 12px;
   }
 
-  .subscribe-form{
+  .subscribe-form {
     flex-direction: row;
     align-items: baseline;
   }
 
-  .subscribe-input{
+  .subscribe-input {
     margin-right: 12px;
     width: 358px;
-  } 
+  }
 }
