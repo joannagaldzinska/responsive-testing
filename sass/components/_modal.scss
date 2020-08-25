@@ -36,9 +36,9 @@
 
   @media screen and (min-width: 480px) {
     position: absolute;
-    top: 50%;
+    top: 93px;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
   }
 
   @media screen and (max-width: 1199px) {
