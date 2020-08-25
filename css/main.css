@@ -597,6 +597,8 @@ textarea {
   appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
+  border: none;
+  outline: none;
 }
 
 .policy-required::after {
@@ -958,6 +960,7 @@ textarea {
 
 .hero {
   display: block;
+  margin: 0 auto;
   max-width: 1600px;
   background-color: rgba(47, 48, 58, 0.8);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-mobile@1x.jpg);
@@ -971,25 +974,25 @@ textarea {
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-tablet@1x.jpg);
   }
 }
 
-@media screen and (min-width: 480px), screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px), screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-tablet@2x.jpg);
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-pc@1x.jpg);
   }
 }
 
-@media screen and (min-width: 768px), screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px), screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-pc@2x.jpg);
   }
