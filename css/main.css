@@ -597,8 +597,6 @@ textarea {
   appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
-  border: none;
-  outline: none;
 }
 
 .policy-required::after {
@@ -1168,21 +1166,12 @@ p {
   .our-team-list-item:not(:last-child) {
     margin-bottom: 30px;
   }
-  .our-team-list-item img {
-    width: 450px;
-    height: 320px;
-    object-fit: cover;
-    object-position: top;
-  }
 }
 
 @media screen and (min-width: 768px) {
   .our-team-list {
     display: flex;
     flex-wrap: wrap;
-  }
-  .our-team-list-item {
-    width: 354px;
   }
 }
 
@@ -1192,12 +1181,6 @@ p {
   }
   .our-team-list-item:not(:nth-last-child(-n + 2)) {
     margin-bottom: 30px;
-  }
-  .our-team-list-item img {
-    width: 354px;
-    height: 260px;
-    object-fit: cover;
-    object-position: top;
   }
 }
 

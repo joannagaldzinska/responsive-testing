@@ -36,23 +36,12 @@
   .our-team-list-item:not(:last-child) {
     margin-bottom: 30px;
   }
-
-  .our-team-list-item img {
-    width: 450px;
-    height: 320px;
-    object-fit: cover;
-    object-position: top;
-  }
 }
 
 @media screen and (min-width: 768px) {
   .our-team-list {
     display: flex;
     flex-wrap: wrap;
-  }
-
-  .our-team-list-item {
-    width: 354px;
   }
 }
 
@@ -64,13 +53,6 @@
   .our-team-list-item:not(:nth-last-child(-n + 2)) {
     margin-bottom: 30px;
   }
-
-  .our-team-list-item img {
-    width: 354px;
-    height: 260px;
-    object-fit: cover;
-    object-position: top;
-  }
 }
 
 @media screen and (max-width: 1199px) {
@@ -78,15 +60,8 @@
     padding-top: 60px;
     padding-bottom: 60px;
   }
-
-  // .team-member-picture{
-
-  // }
-
-  // .our-team-list-item img{
-
-  // }
 }
+
 @media screen and (min-width: 1200px) {
   .team {
     padding-top: 94px;
